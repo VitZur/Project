@@ -1,0 +1,13 @@
+from application.salary import *
+from application.db.people import *
+import datetime
+
+if __name__ == "__main__":
+    time_now = datetime.datetime.now()
+    print(f'Current time now: {time_now}')
+
+    salary_info = calculate_salary()
+    print(f'Salary info: {salary_info}')
+
+    employees_info = get_employees()
+    print(f'People info: {employees_info}')
